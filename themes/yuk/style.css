@@ -1,0 +1,38 @@
+/*
+ * elements for the 'yuk' theme
+ *
+ * @author Don Bowman  <don@lynsoft.co.uk>
+ */
+
+body {
+  background: transparent url(themes/@{ini_theme}/yellow.jpg) center;
+}
+
+div.dokuwiki #header {
+  background: transparent url(themes/@{ini_theme}/blue.jpg) center;
+}
+
+div.dokuwiki #header_bar {
+  background: transparent url(themes/@{ini_theme}/red.jpg) center;
+}
+
+div.dokuwiki #content {
+  background: transparent url(themes/@{ini_theme}/brown.jpg) center;
+}
+
+div.dokuwiki #page {
+  background: transparent url(themes/@{ini_theme}/blue.jpg) center;
+}
+
+div.dokuwiki #sidebar {
+  background: transparent url(themes/@{ini_theme}/pink.jpg) center;
+}
+
+div.dokuwiki #sitecmd, #sitenav {
+  background: transparent url(themes/@{ini_theme}/green.jpg) center;
+}
+
+div.dokuwiki #sitecmd_content, #sitenav_content {
+  background: transparent url(themes/@{ini_theme}/brown.jpg) center;
+}
+

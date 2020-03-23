@@ -1,0 +1,153 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="sp2115Logo" href="?id=home">
+                <img src="<?php echo tpl_basedir()?>images/spp2115_logo.png" class="" alt="" width="80" />
+            </a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+
+
+
+            <?php
+            $xml=simplexml_load_file(dirname(__FILE__).'/files/menus.xml') or die("Error: Cannot open menus.xml file");
+            echo '<ul class="nav navbar-nav">';
+            function MenuCreator( $xml ) 
+            {
+                 
+                foreach($xml->children() as $sublink) 
+                {
+                    $name=$sublink["name"];
+                    $url=$sublink["url"];
+                    $category=$sublink["cat"];
+                    $sublinkCount=$sublink->count();
+                    $status=$sublink["status"];
+                   
+                        if($sublinkCount>0)
+                        {
+                            
+                            /*if dropdown from top */
+                            if($category=="main")
+                            {
+                                if($status=="active")
+                                {
+                                    echo "<li class='dropdown'><a href='$url' class='nav-link dropdown-toggle' data-toggle='dropdown'> <span class='nav-label'>$name</span>";
+                                    
+                                        foreach($sublink->children() as $child){
+                                            if($child["status"]=="active"){
+                                                echo "<span class='caret'></span>";
+                                                break;
+                                            }
+                                        }
+                                    echo "</a>";
+                                }
+                            }
+                            else
+                             if($category=="sub")
+                            {
+                                /*if submenu */
+                                if($status=="active")
+                                {
+                                 echo "<li class='dropdown-submenu'><a href='$url'>$name";
+                                 
+                                    foreach($sublink->children() as $child){
+                                        if($child["status"]=="active"){
+                                            echo "<span class='caret'></span>";
+                                            break;
+                                        }
+                                    }
+                                    echo "</a>";
+                                 
+                                }
+                            } 
+                            
+                        }else{
+                            if($status=="active")
+                                {
+                             echo "<li><a href='$url'>$name</a></li>";
+                            }
+                        }
+                       
+                    if($sublinkCount)
+                    {
+                        echo "<ul class='dropdown-menu'>";
+                        MenuCreator($sublink);
+                        echo "</ul>";
+                        echo "</li>";
+                        
+                    }
+                }
+            }
+            MenuCreator($xml);
+            @include(dirname(__FILE__).'/temp.html');
+
+              echo "</ul>"; 
+
+                  $user = rb_get_user_info();
+                  $perms = auth_quickaclcheck('home');
+                  echo '<ul class="nav navbar-nav navbar-right">';                    
+                  echo '<li class="dropdown">';
+                  echo '<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><span class="nav-label">Admin</span><span class="caret"></span></a>';
+                  echo '<ul class="dropdown-menu">';
+                  foreach (tpl_getConf('rb_actions') as $command) 
+                    {
+                        $url=GetLink($command);
+                      
+                        if($url==false || is_null($url)) continue;
+                        
+                        $caption=GetCaption($command);
+                
+                            echo "<li><a href=$url>$caption</a></li>";
+
+                    }
+                    echo "</ul></li></ul>";
+
+
+            function GetCaption($type)
+            {
+                global $lang;   
+                $data = tpl_get_action($type);
+                extract($data);
+                if(strpos($id, '#') !== 0) 
+                {
+                    $caption = $lang['btn_'.$type];
+                }
+                    return $caption;    
+            }
+            function GetLink($type) 
+            {
+
+                $data = tpl_get_action($type);
+                if($data === false) 
+                {
+                    return false;
+                } elseif(!is_array($data)) 
+                {
+                    $out = sprintf($data, 'link');
+                } 
+                else 
+                {
+
+                    extract($data);
+                    if(strpos($id, '#') === 0) 
+                    {
+                        $linktarget = $id;
+                    } else 
+                    {
+                        $linktarget = wl($id, $params);
+                    }
+                }
+                
+                return $linktarget;
+            }
+        ?>
+
+        </div>
+    </div>
+</nav>
