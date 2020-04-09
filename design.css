@@ -44,12 +44,14 @@ div.dokuwiki img {
     border: 0;
 }
 
+
+/*
 div.dokuwiki p,
 div.dokuwiki blockquote,
 div.dokuwiki table,
 div.dokuwiki pre {
-    margin: 0 60px 0.1em 0;
-}
+     margin: 0 60px 0.1em 0;
+}*/
 
 div.dokuwiki hr {
     border: 0px;
@@ -235,7 +237,7 @@ div.dokuwiki button.button {
 html>body div.dokuwiki input.button,
 html>body div.dokuwiki button.button {
     /*  background:  __background_alt__ url(images/buttonshadow.png) repeat-x bottom; */
-    background : __background_alt__ url(themes/@{ini_theme}/button.png) repeat-x center;
+    background: __background_alt__ url(themes/@{ini_theme}/button.png) repeat-x center;
 }
 
 * html div.dokuwiki input.button,
