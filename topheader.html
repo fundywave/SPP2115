@@ -151,6 +151,11 @@
                         }
                     }
                 }
+                #to close big menu
+                if($menutype=="big" and $category=="sub")
+                    {
+                        echo "</ul>";
+                    }
             }
             MenuCreator($xml);
             echo "</ul>";
