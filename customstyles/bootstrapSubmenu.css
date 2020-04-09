@@ -50,7 +50,7 @@
         position: absolute;
         top: 0;
         margin-left: 40%;
-        margin-top: 15px;
+        margin-top: _15px_;
         z-index: 999;
     }
 }
@@ -67,6 +67,9 @@
         max-width: 90%;
         margin: auto;
         text-align: justify;
+        font-size: 16px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     /*Show menu on mouse hover for nav bar*/
     .dropdown:hover>.dropdown-menu {
@@ -132,7 +135,7 @@
 
 .dropdown-menu-large>li>ul>li>a {
     display: block;
-    padding: 3px 30%;
+    padding: 3px 5%;
     clear: both;
     font-weight: 300;
     line-height: 1.428571429;
@@ -170,6 +173,10 @@
     text-align: center;
 }
 
+.col-sm-2 {
+    width: 20%;
+}
+
 @media (max-width: 768px) {
     .dropdown-menu-large {
         margin-left: 0;
@@ -183,5 +190,17 @@
     }
     .dropdown-menu-large .dropdown-header {
         padding: 5px 15px !important;
+    }
+    .centerpage {
+        max-width: 90%;
+        margin: auto;
+        text-align: justify;
+        font-size: 16px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #myCarousel .carousel-caption {
+        font-size: x-small;
+        padding: 2% 2% 2% 2%;
     }
 }
