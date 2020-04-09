@@ -1,4 +1,4 @@
-<div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 45%; margin: 0 auto">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="15000">
     <!-- Indicators -->
 
     <!-- Wrapper for slides -->
@@ -25,10 +25,31 @@
         {
             $filename=join(DIRECTORY_SEPARATOR, array('/spp2115_dev/lib/tpl/roundbox/images/carousel', basename($image)));
             if($counter==0)
-          echo "<div class='item active'><img src=$filename></div>";
+          {
+            echo "<div class='item active'><img src=$filename><div class=carousel-caption>";
+            GetDescription(basename($image));
+            echo "</div></div>";
+          }
           else
-          echo "<div class=item><img src=$filename></div>";
+          {
+            echo "<div class=item><img src=$filename><div class=carousel-caption>";
+            GetDescription(basename($image));
+            echo "</div></div>";
+          }
           $counter++;
+        }
+        function GetDescription($imageName) 
+        {
+          $xml=simplexml_load_file(dirname(__FILE__).'/images/carousel/descriptions.xml') or die("Error: Cannot open menus.xml file");
+            foreach($xml->children() as $sublink) 
+            {
+                $name=$sublink["name"];
+                $description=$sublink["description"];
+                if($name==$imageName)
+                {
+                  echo "<p>$description</p>";
+                }
+            }
         }
     ?>
 
