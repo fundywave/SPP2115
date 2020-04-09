@@ -1,74 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <links>
     <sublink name="Home" url="?id=home" cat="main" status="active" menutype="normal"></sublink>
-    <sublink name="News" url="?id=news" cat="main" status="active" menutype="normal">
-	    <sublink name="Upcoming events" url="?id=upcomingevents" cat="sub" status="active"  menutype="normal"></sublink>
-		<sublink name="Workshops" url="?id=workshops" cat="sub" status="active"  menutype="normal"></sublink>
-	    <sublink name="Past events" url="?id=pastevents" cat="sub" status="active"  menutype="normal"></sublink>
-	    <sublink name="Organized sessions" url="?id=organizedsessions" cat="sub" status="active"  menutype="normal"></sublink>
-    </sublink>
+    <sublink name="News&amp;Events" url="?id=news" cat="main" status="active" menutype="normal"></sublink> 
     <sublink name="Research Group" url="#" cat="main" status="active" menutype="normal">
         <sublink name="Coordination" url="?id=coordinator" cat="sub" status="active" menutype="normal"></sublink>
-        <sublink name="Additional initiator" url="?id=addinitiator" cat="sub" status="active" menutype="normal"></sublink>
+        <sublink name="Additional initiator" url="?id=addinitiator" cat="sub" status="deactive" menutype="normal"></sublink>
         <sublink name="Researchers" url="?id=researchers" cat="sub" status="active" menutype="normal"></sublink>
     </sublink>
     <sublink name="OldProjects" url="?id=projects" cat="main" status="deactive" menutype="normal">
-    	<sublink name="PARA" url="#" cat="sub" status="active" menutype="normal">
-    		<sublink name="Current status" url="?id=project_para_status" cat="sub" status="active" menutype="normal"></sublink>
-			<sublink name="Publications" url="?id=project_para_publications" cat="sub" status="active" menutype="normal"></sublink>
-    	</sublink>
-		<sublink name="SPOMC" url="#" cat="sub" status="active" menutype="normal">
-    		<sublink name="Current status" url="?id=project_spomc_status" cat="sub" status="active"  menutype="normal"></sublink>
-			<sublink name="Publications" url="?id=project_spomc_publications" cat="sub" status="active" menutype="normal"></sublink>
-    	</sublink>
-    	<sublink name="IcePolCKa" url="#" cat="sub" status="active" menutype="normal">
-    		<sublink name="Current status" url="?id=project_icepolcka_status" cat="sub" status="active" menutype="normal"></sublink>
-			<sublink name="Publications" url="?id=project_icepolcka_publications" cat="sub" status="active" menutype="normal"></sublink>
-    	</sublink>
-		<sublink name="PICNICC" url="#" cat="sub" status="active" menutype="normal">
-    		<sublink name="Current status" url="?id=project_picnicc_status" cat="sub" status="active" menutype="normal"></sublink>
-			<sublink name="Publications" url="?id=project_picnicc_publications" cat="sub" status="active" menutype="normal"></sublink>
-    	</sublink>
+        <sublink name="PARA" url="#" cat="sub" status="active" menutype="normal">
+            <sublink name="Current status" url="?id=project_para_status" cat="sub" status="active" menutype="normal"></sublink>
+            <sublink name="Publications" url="?id=project_para_publications" cat="sub" status="active" menutype="normal"></sublink>
+        </sublink>
+        <sublink name="SPOMC" url="#" cat="sub" status="active" menutype="normal">
+            <sublink name="Current status" url="?id=project_spomc_status" cat="sub" status="active"  menutype="normal"></sublink>
+            <sublink name="Publications" url="?id=project_spomc_publications" cat="sub" status="active" menutype="normal"></sublink>
+        </sublink>
+        <sublink name="IcePolCKa" url="#" cat="sub" status="active" menutype="normal">
+            <sublink name="Current status" url="?id=project_icepolcka_status" cat="sub" status="active" menutype="normal"></sublink>
+            <sublink name="Publications" url="?id=project_icepolcka_publications" cat="sub" status="active" menutype="normal"></sublink>
+        </sublink>
+        <sublink name="PICNICC" url="#" cat="sub" status="active" menutype="normal">
+            <sublink name="Current status" url="?id=project_picnicc_status" cat="sub" status="active" menutype="normal"></sublink>
+            <sublink name="Publications" url="?id=project_picnicc_publications" cat="sub" status="active" menutype="normal"></sublink>
+        </sublink>
     </sublink>
-	<sublink name="Conferences" url="?id=conferences" cat="main" status="active" menutype="normal"></sublink>
-	<sublink name="Additional" url="#" cat="main" status="active" menutype="normal">
-		<sublink name="Downloads" url="?id=downloads" cat="sub" status="active" menutype="normal"></sublink>
-		<sublink name="Employment Opportunities" url="?id=empopportunities" cat="sub" status="active" menutype="normal"></sublink>
-		<sublink name="Internal Contents" url="#" cat="sub" status="active" menutype="normal">
-			<sublink name="Prom Meetings" url="?id=prom_meetings" cat="sub" status="active"  menutype="normal"></sublink>
-		</sublink>
-	</sublink>
-    <sublink name="Management" url="#" cat="main" status="active" menutype="normal"></sublink>
-    <sublink name="Projects" url="#" cat="main" status="active" menutype="big">
-    	<sublink name="Objective 1" url="#" cat="sub" status="active" menutype="big" linktype="divider">
-    		<sublink name="PICNICC" url="?id=obj1_picnicc" cat="subsub" status="active" menutype="big"></sublink>
-			<sublink name="IcePolKa" url="?id=obj1_icepolka" cat="subsub" status="active" menutype="big"></sublink>
-			<sublink name="HydroColumn" url="?id=obj1_precipitation_processesRR" cat="subsub" status="active" menutype="big"></sublink>
-			<sublink name="ILACPR" url="?id=obj1_ilacpr" cat="subsub" status="active" menutype="big"></sublink>
-			<sublink name="Operation Hydrometeors" url="?id=obj1_operation_hydrometeors" cat="subsub" status="active" menutype="big"></sublink>
-			<sublink name="POLICE" url="?id=obj1_police" cat="subsub" status="active" menutype="big"></sublink>
-			<sublink name="IMPRINT" url="?id=obj1_imprint" cat="subsub" status="active" menutype="big"></sublink>
-			<sublink name="Web-based radar data portal" url="?id=obj1_webradarportal" cat="subsub" status="active" menutype="big"></sublink>
-    	</sublink>
-		<sublink name="Objective 2" url="#" cat="sub" status="active" menutype="big" linktype="divider">
-    		<sublink name="IMPRINT" url="?id=obj2_imprint" cat="subsub" status="active" menutype="big"></sublink>
-			<sublink name="ILACPR" url="?id=obj2_ilacpr" cat="subsub" status="active" menutype="big"></sublink>
-			<sublink name="Life Cycle of Convective Storms" url="?id=obj2_lfcorvective_storms" cat="subsub" status="active" menutype="big"></sublink>
-			<sublink name="SPOCC" url="?id=obj2_spocc" cat="subsub" status="active" menutype="big"></sublink>
-			<sublink name="PARA" url="?id=obj2_para" cat="subsub" status="active" menutype="big"></sublink>
-    	</sublink>
-	    <sublink name="Objective 3" url="#" cat="sub" status="active" menutype="big" linktype="divider">
-    		<sublink name="PICNICC" url="?id=obj3_picnicc" cat="subsub" status="active" menutype="big"></sublink>
-			<sublink name="Life Cycle of Convective Storms" url="?id=obj3_lfcorvective_storms" cat="subsub" status="active" menutype="big"></sublink>
-    	</sublink>
-		<sublink name="Objective 4" url="#" cat="sub" status="active" menutype="big" linktype="divider">
-    		<sublink name="REDPOL" url="?id=obj4_error_assessment" cat="subsub" status="active" menutype="big"></sublink>
-			<sublink name="Operation Hydrometeors" url="?id=obj4_operation_hydrometeors" cat="subsub" status="active" menutype="big"></sublink>
-    	</sublink>
-		<sublink name="Objective 5" url="#" cat="sub" status="active" menutype="big" linktype="divider">
-    		<sublink name="IcePolKa" url="?id=obj5_icepolka" cat="subsub" status="active" menutype="big"></sublink>
-			<sublink name="Polarimetric Phased-Array Radar" url="?id=obj5_phased_array_radar" cat="subsub" status="active" menutype="big"></sublink>
-			<sublink name="Error assessment for radar data assimilation" url="?id=obj5_error_assessment" cat="subsub" status="active" menutype="big"></sublink>
-    	</sublink>
+	<sublink name="Projects" url="#" cat="main" status="active" menutype="big">
+        <sublink name="Objective 1" url="#" cat="sub" status="active" menutype="big" linktype="divider">
+            <sublink name="PICNICC" url="?id=obj1_picnicc" cat="subsub" status="active" menutype="big"></sublink>
+            <sublink name="IcePolKa" url="?id=obj1_icepolka" cat="subsub" status="active" menutype="big"></sublink>
+            <sublink name="HydroColumn" url="?id=obj1_precipitation_processesRR" cat="subsub" status="active" menutype="big"></sublink>
+            <sublink name="ILACPR" url="?id=obj1_ilacpr" cat="subsub" status="active" menutype="big"></sublink>
+            <sublink name="Operation Hydrometeors" url="?id=obj1_operation_hydrometeors" cat="subsub" status="active" menutype="big"></sublink>
+            <sublink name="POLICE" url="?id=obj1_police" cat="subsub" status="active" menutype="big"></sublink>
+            <sublink name="IMPRINT" url="?id=obj1_imprint" cat="subsub" status="active" menutype="big"></sublink>
+            <sublink name="Web-based radar data portal" url="?id=obj1_webradarportal" cat="subsub" status="active" menutype="big"></sublink>
+        </sublink>
+        <sublink name="Objective 2" url="#" cat="sub" status="active" menutype="big" linktype="divider">
+            <sublink name="IMPRINT" url="?id=obj2_imprint" cat="subsub" status="active" menutype="big"></sublink>
+            <sublink name="ILACPR" url="?id=obj2_ilacpr" cat="subsub" status="active" menutype="big"></sublink>
+            <sublink name="Life Cycle of Convective Storms" url="?id=obj2_lfcorvective_storms" cat="subsub" status="active" menutype="big"></sublink>
+            <sublink name="SPOCC" url="?id=obj2_spocc" cat="subsub" status="active" menutype="big"></sublink>
+            <sublink name="PARA" url="?id=obj2_para" cat="subsub" status="active" menutype="big"></sublink>
+        </sublink>
+        <sublink name="Objective 3" url="#" cat="sub" status="active" menutype="big" linktype="divider">
+            <sublink name="PICNICC" url="?id=obj3_picnicc" cat="subsub" status="active" menutype="big"></sublink>
+            <sublink name="Life Cycle of Convective Storms" url="?id=obj3_lfcorvective_storms" cat="subsub" status="active" menutype="big"></sublink>
+        </sublink>
+        <sublink name="Objective 4" url="#" cat="sub" status="active" menutype="big" linktype="divider">
+            <sublink name="REDPOL" url="?id=obj4_error_assessment" cat="subsub" status="active" menutype="big"></sublink>
+            <sublink name="Operation Hydrometeors" url="?id=obj4_operation_hydrometeors" cat="subsub" status="active" menutype="big"></sublink>
+        </sublink>
+        <sublink name="Objective 5" url="#" cat="sub" status="active" menutype="big" linktype="divider">
+            <sublink name="IcePolKa" url="?id=obj5_icepolka" cat="subsub" status="active" menutype="big"></sublink>
+            <sublink name="Polarimetric Phased-Array Radar" url="?id=obj5_phased_array_radar" cat="subsub" status="active" menutype="big"></sublink>
+            <sublink name="REDPOL" url="?id=obj5_error_assessment" cat="subsub" status="active" menutype="big"></sublink>
+        </sublink>
     </sublink>
+	<sublink name="Publications" url="#" cat="main" status="active" menutype="normal">
+        <sublink name="Peer-reviewed Publications" url="?id=peerviewpub" cat="sub" status="active" menutype="normal"></sublink>
+        <sublink name="Conference contributions" url="?id=conferencecontributons" cat="sub" status="active" menutype="normal"></sublink>
+    </sublink>
+    <sublink name="Meetings" url="?id=meetings" cat="main" status="active" menutype="normal"></sublink>
+    <sublink name="Additional" url="#" cat="main" status="deactive" menutype="normal">
+        <sublink name="Downloads" url="?id=downloads" cat="sub" status="active" menutype="normal"></sublink>
+        <sublink name="Employment Opportunities" url="?id=empopportunities" cat="sub" status="active" menutype="normal"></sublink>
+        <sublink name="Internal Contents" url="#" cat="sub" status="active" menutype="normal">
+            <sublink name="Prom Meetings" url="?id=prom_meetings" cat="sub" status="active"  menutype="normal"></sublink>
+        </sublink>
+    </sublink>
+	<sublink name="Management" url="#" cat="main" status="deactive" menutype="normal"></sublink>
 </links>
