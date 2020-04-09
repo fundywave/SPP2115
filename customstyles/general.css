@@ -5,3 +5,70 @@ body {
 div.currentAnchor {
     padding-top: 50px;
 }
+
+
+/*
+#myCarousel .carousel-caption {
+    display: inline-block;
+    width: 100%;
+    left: 0;
+    position: relative;
+    top: -20px;
+    border: 1px solid #efefef;
+    background-color: #f5f5f5;
+    opacity: 1.0;
+}*/
+
+#myCarousel .carousel-caption {
+    position: absolute;
+    /* margin-top: 20px; */
+    left: 68%;
+    min-width: 32%;
+    height: 100%;
+    bottom: 0;
+    background-color: #333;
+    padding: 12% 2% 2% 2%;
+    font-size: large;
+    opacity: 0.8;
+}
+
+#myCarousel {
+    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+.img-responsive,
+.thumbnail a>img,
+.thumbnail>img {
+    width: 68%;
+}
+
+.carousel-inner>.item {
+    -webkit-transition: -webkit-transform 1.2s ease-in-out !important;
+    -o-transition: -o-transform 1.2s ease-in-out !important;
+    transition: transform 1.2s ease-in-out !important;
+}
+
+@media (max-width: 768px) {
+    #myCarousel .carousel-caption {
+        font-size: x-small;
+        padding: 2% 2% 2% 2%;
+    }
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control .glyphicon-chevron-left {
+    margin-top: 100%;
+    left: 20%;
+}
+
+.carousel-control .glyphicon-chevron-right {
+    margin-top: 100%;
+    right: 20%;
+}
